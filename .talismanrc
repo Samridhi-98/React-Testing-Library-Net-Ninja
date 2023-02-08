@@ -1,4 +1,6 @@
 fileignoreconfig:
 - filename: yarn.lock
   checksum: 0f8e236962ee6718caea30bbc001847c804dbbcfc08a97b393cb2b41e62cc162
+- filename: src/components/FollowersList/FollowersList.js
+  checksum: 2d7dd73114c18989f9355ca40a834cacccecd201d32344cf89d3d1ed6112658f  
 version: ""
