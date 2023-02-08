@@ -12,6 +12,22 @@ const MockFollowersList = () => {
 
 describe('Async Request', () => {
 
+    beforeEach(() => {  //? RUN BEFORE EACH TEST
+        jest.mock("../../../__mocks__/axios");
+    })
+
+    beforeAll(() => {   //? RUN ONCE BEFORE ALL TEST
+        jest.mock("../../../__mocks__/axios");
+    })
+
+    afterAll(() => {    //? RUN ONCE AFTER ALL TEST
+        jest.clearAllMocks();
+    })
+
+    afterEach(() => {   //? RUN AFTER EACH TEST
+        jest.clearAllMocks();
+    })
+
     it('should fetch and render element', async () => {
         render(<MockFollowersList />);
 
